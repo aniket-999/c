@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="m2.css">
+    <style>
+        p {
+            font-size: 30px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="word">
+        <a href="s.html">
+            <span>NE</span>
+            <span>ED</span>
+            &nbsp
+            &nbsp
+            &nbsp
+            <span>A</span>
+            &nbsp
+            &nbsp
+            &nbsp
+            <span>HOSPITAL?</span>
+            &nbsp
+            &nbsp
+            &nbsp
+        </a>
+
+
+
+    </div>
+    <script>
+        const spans = document.querySelectorAll('.word span');
+
+        spans.forEach((span, idx) => {
+            span.addEventListener('click', (e) => {
+                e.target.classList.add('active');
+            });
+            span.addEventListener('animationend', (e) => {
+                e.target.classList.remove('active');
+            });
+
+            // Initial animation
+            setTimeout(() => {
+                span.classList.add('active');
+            }, 750 * (idx + 1))
+        });
+    </script>
+
+
+
+    <br>
+
+    <h1><strong>
+            ABOUT US
+        </strong> </h1>
+    <p>
+        This site is to help all people’s of Mumbai to find their nearest and vacant hospital beds for Covid at this
+        time of pandemic…….The COVID-19 recovery rate in Mumbai has gone down to 79%, the BMC said, adding that the
+        overall growth rate has worsened to 2% and the doubling rate has dropped to 34 days…..Although serious cases
+        have increased in the city, it still has 17 per cent of its ventilator capacity available. In terms of ICU beds,
+        about 20 per cent of the beds are available in the city. About 74 per cent of hospital beds in the city are
+        occupied as of now.
+        In private hospitals, 25 per cent of ventilator beds and 26 per cent of ICU beds are available. In contrast, in
+        government hospitals, only 13 per cent and 16 per cent of ventilator and ICU beds are available in Mumbai.
+        With the help of this website you can easily find and search all available ventilators in Mumbai’s Hospitals and
+        can easily save your time in this pandemic situation
+
+    </p>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+    <title>hospital</title>
+    <style>
+        #visible {
+            visibility: hidden;
+        }
+
+        * {
+            color: black;
+            text-align: center;
+            font-size: larger;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body style=" background-color: black;" alink="#000099" link="#000099" vlink="#990099">
+    &nbsp; <br>
+
+    <div style="text-align: center;">
+        <label for="city" style="color: white;">Enter your City</label>
+        <select id="city" name="city" required>
+            <option>bombay</option>
+        </select>
+        <br>
+    </div>
+    <br>
+    <div style="text-align: center;">
+        <label for="hospital" style="color:white">Hospital Name:</label>
+        <select id="hospital" name="hospital" required>
+            <option id="main">Breach Candy</option>
+            <option>Bombay Hospital</option>
+            <option>HN Reliance</option>
+            <option>Lilavati</option>
+            <option>Raheja</option>
+            <option>Hinduja</option>
+            <option>Fortis Mulund</option>
+            <option>Kokilaben Hospital</option>
+            <option>Nanavati Hospital</option>
+            <option>Hiranandani Hospital</option>
+            <option>SevenHills Hospital</option>
+            <option>KEM Hospital</option>
+            <option>Sion Hospital</option>
+            <option>Cooper Hospital</option>
+            <option>HBT Trauma care centre</option>
+            <option>Bhabha Hospital</option>
+            <option>Rajawadi Hospital</option>
+        </select>
+        <br>
+    </div>
+    <br>
+    <div style="text-align: center;"><input type="submit" value="Submit" onclick="my()">
+        <br>
+
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div id="visible" style="color: white; text-align: center">
+        <label for="bed" style="color:white">Available Beds :</label>
+        <input type="text" id="bed" name="bed" value="12"><br>
+    </div>
+    <script>
+        function my() {
+            document.getElementById("visible").style.visibility = "visible";
+            if (document.getElementById("hospital").innerHTML == document.getElementById("main").innerHTML) {
+                document.getElementById("bed").innerHTML = "12";
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>
